@@ -45,7 +45,7 @@
           <a href="#portfolio" class="btn btn--ghost">See My Work</a>
         </div>
         <ul class="hero__stats">
-          <li><strong>50+</strong><span>Builds completed</span></li>
+          <li><strong>8</strong><span>Builds completed</span></li>
           <li><strong>100%</strong><span>Stress-tested</span></li>
           <li><strong>0</strong><span>Compromises</span></li>
         </ul>
@@ -149,6 +149,30 @@
             </div>
           </article>
         </div>
+        <div class="featured reveal">
+          <div class="featured__head">
+            <p class="section__label">Featured build</p>
+            <h3 class="featured__title">Project Vortex — in detail</h3>
+            <p class="featured__text">
+              High-refresh gaming build &middot; AMD Ryzen + RTX 4080. Every angle, every cable.
+              Click any photo to view it full size.
+            </p>
+          </div>
+          <div class="gallery">
+            <button class="gallery__item" type="button" data-full="images/project-vortex/front.svg" data-caption="Front view">
+              <img src="images/project-vortex/front.svg" alt="Project Vortex — front view" loading="lazy" />
+            </button>
+            <button class="gallery__item" type="button" data-full="images/project-vortex/cables.svg" data-caption="Cable management">
+              <img src="images/project-vortex/cables.svg" alt="Project Vortex — cable management" loading="lazy" />
+            </button>
+            <button class="gallery__item" type="button" data-full="images/project-vortex/inside.svg" data-caption="Internal layout">
+              <img src="images/project-vortex/inside.svg" alt="Project Vortex — internal layout" loading="lazy" />
+            </button>
+            <button class="gallery__item" type="button" data-full="images/project-vortex/desk.svg" data-caption="On the desk">
+              <img src="images/project-vortex/desk.svg" alt="Project Vortex — on the desk" loading="lazy" />
+            </button>
+          </div>
+        </div>
         <p class="portfolio__note">
           Ready to see your own dream build here? Photos of your rig can be added after delivery.
         </p>
@@ -193,7 +217,7 @@
           Tell me what you're looking for — gaming, work, or both. I'll get back to you within
           24 hours with a plan and a transparent quote.
         </p>
-        <form class="form" id="contactForm" novalidate>
+        <form class="form" id="contactForm" action="https://formspree.io/f/moealpve" method="POST" novalidate>
           <div class="form__row">
             <input type="text" name="name" placeholder="Your name" required />
             <input type="email" name="email" placeholder="Email address" required />
@@ -227,6 +251,16 @@
       <p class="footer__legal">&copy; 2026 Maynard Custom. All rights reserved.</p>
     </div>
   </footer>
+
+  <div class="lightbox" id="lightbox" hidden>
+    <button class="lightbox__close" type="button" aria-label="Close">&#215;</button>
+    <button class="lightbox__prev" type="button" aria-label="Previous photo">&#8249;</button>
+    <figure class="lightbox__figure">
+      <img class="lightbox__img" src="" alt="" />
+      <figcaption class="lightbox__caption"></figcaption>
+    </figure>
+    <button class="lightbox__next" type="button" aria-label="Next photo">&#8250;</button>
+  </div>
 
   <script src="script.js"></script>
 </body>
