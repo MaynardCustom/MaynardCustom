@@ -8,7 +8,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="styles.css?v=4" />
+  <link rel="stylesheet" href="styles.css?v=5" />
 </head>
 <body>
   <header class="nav" id="nav">
@@ -46,10 +46,78 @@
           <a href="#portfolio" class="btn btn--ghost">See My Work</a>
         </div>
         <ul class="hero__stats">
-          <li><strong>100%</strong><span>Quality checked</span></li>
-          <li><strong>100%</strong><span>Transparent sourcing</span></li>
-          <li><strong>0</strong><span>Compromises</span></li>
+          <li>Quality checked</li>
+          <li>Transparent sourcing</li>
+          <li>No compromises</li>
         </ul>
+      </div>
+    </section>
+
+    <section class="section" id="featured">
+      <div class="container">
+        <p class="section__label">Portfolio</p>
+        <div class="featured reveal">
+          <div class="featured__head">
+            <p class="section__label">Featured build</p>
+            <h2 class="featured__title">Build 4 — Corsair 4000D Frame Wood</h2>
+            <p class="featured__text">
+              Client build number four, built around the Corsair 4000D Frame Wood case.
+              Click any photo to view it full size.
+            </p>
+          </div>
+          <div class="gallery">
+            <button class="gallery__item" type="button" data-full="images/build-4/1.jpg" data-caption="Photo 1">
+              <img src="images/build-4/1.jpg" alt="Build 4 — photo 1" loading="lazy" />
+            </button>
+            <button class="gallery__item" type="button" data-full="images/build-4/2.jpg" data-caption="Photo 2">
+              <img src="images/build-4/2.jpg" alt="Build 4 — photo 2" loading="lazy" />
+            </button>
+            <button class="gallery__item" type="button" data-full="images/build-4/3.jpg" data-caption="Photo 3">
+              <img src="images/build-4/3.jpg" alt="Build 4 — photo 3" loading="lazy" />
+            </button>
+            <button class="gallery__item" type="button" data-full="images/build-4/4.jpg" data-caption="Photo 4">
+              <img src="images/build-4/4.jpg" alt="Build 4 — photo 4" loading="lazy" />
+            </button>
+            <button class="gallery__item" type="button" data-full="images/build-4/5.jpg" data-caption="Photo 5">
+              <img src="images/build-4/5.jpg" alt="Build 4 — photo 5" loading="lazy" />
+            </button>
+            <button class="gallery__item" type="button" data-full="images/build-4/6.jpg" data-caption="Photo 6">
+              <img src="images/build-4/6.jpg" alt="Build 4 — photo 6" loading="lazy" />
+            </button>
+            <button class="gallery__item" type="button" data-full="images/build-4/7.jpg" data-caption="Photo 7">
+              <img src="images/build-4/7.jpg" alt="Build 4 — photo 7" loading="lazy" />
+            </button>
+            <button class="gallery__item" type="button" data-full="images/build-4/8.jpg" data-caption="Photo 8">
+              <img src="images/build-4/8.jpg" alt="Build 4 — photo 8" loading="lazy" />
+            </button>
+            <button class="gallery__item" type="button" data-full="images/build-4/9.jpg" data-caption="Photo 9">
+              <img src="images/build-4/9.jpg" alt="Build 4 — photo 9" loading="lazy" />
+            </button>
+            <button class="gallery__item" type="button" data-full="images/build-4/10.jpg" data-caption="Photo 10">
+              <img src="images/build-4/10.jpg" alt="Build 4 — photo 10" loading="lazy" />
+            </button>
+            <button class="gallery__item" type="button" data-full="images/build-4/11.jpg" data-caption="Photo 11">
+              <img src="images/build-4/11.jpg" alt="Build 4 — photo 11" loading="lazy" />
+            </button>
+            <button class="gallery__item" type="button" data-full="images/build-4/12.jpg" data-caption="Photo 12">
+              <img src="images/build-4/12.jpg" alt="Build 4 — photo 12" loading="lazy" />
+            </button>
+          </div>
+          <div class="specs">
+            <h4>Build 4 specs</h4>
+            <dl class="specs__list">
+              <div class="specs__row"><dt>Case</dt><dd>Corsair 4000D Frame Wood</dd></div>
+              <div class="specs__row"><dt>CPU</dt><dd>AMD Ryzen 7 5800XT</dd></div>
+              <div class="specs__row"><dt>GPU</dt><dd>NVIDIA RTX 3080 FE (used)</dd></div>
+              <div class="specs__row"><dt>Motherboard</dt><dd>MSI B550M PRO-VDH Wi-Fi</dd></div>
+              <div class="specs__row"><dt>RAM</dt><dd>32GB DDR4 3200MHz</dd></div>
+              <div class="specs__row"><dt>Storage</dt><dd>2TB M.2 SSD (used) + 1TB SATA SSD</dd></div>
+              <div class="specs__row"><dt>PSU</dt><dd>ASRock PRO-850G</dd></div>
+              <div class="specs__row"><dt>Cooling</dt><dd>Thermalright Frozen Infinity 360 Black</dd></div>
+              <div class="specs__row"><dt>OS</dt><dd>Windows 11</dd></div>
+            </dl>
+          </div>
+        </div>
       </div>
     </section>
 
@@ -183,92 +251,60 @@
     <section class="section" id="portfolio">
       <div class="container">
         <p class="section__label">Portfolio</p>
-        <h2 class="section__title reveal">Featured builds</h2>
+        <h2 class="section__title reveal">Builds</h2>
         <div class="portfolio__grid">
           <article class="build reveal">
-            <div class="build__thumb build__thumb--1"><span>Photos coming soon</span></div>
+            <div class="build__thumb">
+              <img src="images/build-1/1.jpg" alt="Build 1 — Thermaltake Core V1 Snow Edition" loading="lazy" />
+            </div>
             <div class="build__info">
-              <h3>Build 1</h3>
-              <p>Client build &middot; photos coming soon</p>
+              <h3>Build 1 — Thermaltake Core V1 Snow Edition</h3>
+              <dl class="specs__list">
+                <div class="specs__row"><dt>Case</dt><dd>Thermaltake Core V1 Snow Edition SPCC Mini ITX</dd></div>
+                <div class="specs__row"><dt>CPU</dt><dd>Intel Core i7-8700K</dd></div>
+                <div class="specs__row"><dt>GPU</dt><dd>Zotac GTX 1080</dd></div>
+                <div class="specs__row"><dt>Motherboard</dt><dd>ASUS H110I-PLUS</dd></div>
+                <div class="specs__row"><dt>RAM</dt><dd>16GB DDR4</dd></div>
+                <div class="specs__row"><dt>Storage</dt><dd>500GB SATA SSD</dd></div>
+                <div class="specs__row"><dt>Cooling</dt><dd>Thermalright AXP90-X47 White LP</dd></div>
+              </dl>
             </div>
           </article>
           <article class="build reveal">
-            <div class="build__thumb build__thumb--2"><span>Photos coming soon</span></div>
+            <div class="build__thumb">
+              <img src="images/build-2/1.jpg" alt="Build 2 — Cooler Master MasterBox Q300L" loading="lazy" />
+            </div>
             <div class="build__info">
-              <h3>Build 2</h3>
-              <p>Client build &middot; photos coming soon</p>
+              <h3>Build 2 — Cooler Master MasterBox Q300L</h3>
+              <dl class="specs__list">
+                <div class="specs__row"><dt>Case</dt><dd>Cooler Master MasterBox Q300L</dd></div>
+                <div class="specs__row"><dt>CPU</dt><dd>Intel Core i5-12400F</dd></div>
+                <div class="specs__row"><dt>GPU</dt><dd>XFX Speedster Swift 210 AMD Radeon RX 7600 8GB</dd></div>
+                <div class="specs__row"><dt>Motherboard</dt><dd>Galaxy H610M-K</dd></div>
+                <div class="specs__row"><dt>RAM</dt><dd>32GB DDR4 3200MHz</dd></div>
+                <div class="specs__row"><dt>PSU</dt><dd>Thermaltake Smart 600W 80 Plus</dd></div>
+                <div class="specs__row"><dt>Cooling</dt><dd>Lian Li Galahad 240mm AIO</dd></div>
+              </dl>
             </div>
           </article>
           <article class="build reveal">
-            <div class="build__thumb build__thumb--3"><span>Photos coming soon</span></div>
+            <div class="build__thumb build__thumb--placeholder-3">
+              <span>Photos coming soon</span>
+            </div>
             <div class="build__info">
-              <h3>Build 3</h3>
-              <p>Client build &middot; photos coming soon</p>
+              <h3>Build 3 — Corsair 275R</h3>
+              <dl class="specs__list">
+                <div class="specs__row"><dt>Case</dt><dd>Corsair 275R</dd></div>
+                <div class="specs__row"><dt>CPU</dt><dd>AMD Ryzen 7 5800X</dd></div>
+                <div class="specs__row"><dt>GPU</dt><dd>EVGA RTX 3070 Ti</dd></div>
+                <div class="specs__row"><dt>Motherboard</dt><dd>ASUS ROG Strix B550-F</dd></div>
+                <div class="specs__row"><dt>RAM</dt><dd>G.Skill Trident 64GB DDR4</dd></div>
+                <div class="specs__row"><dt>Storage</dt><dd>Crucial 1TB M.2 + Samsung 970 EVO 2TB M.2</dd></div>
+                <div class="specs__row"><dt>PSU</dt><dd>Corsair 750E Platinum</dd></div>
+                <div class="specs__row"><dt>Cooling</dt><dd>Thermalright Peerless Assassin 120F Black</dd></div>
+              </dl>
             </div>
           </article>
-        </div>
-
-        <div class="featured reveal">
-          <div class="featured__head">
-            <p class="section__label">Featured build</p>
-            <h3 class="featured__title">Build 4 — Corsair 4000D Frame Wood</h3>
-            <p class="featured__text">
-              Client build number four, built around the Corsair 4000D Frame Wood case.
-              Click any photo to view it full size.
-            </p>
-          </div>
-          <div class="gallery">
-            <button class="gallery__item" type="button" data-full="images/build-4/1.jpg" data-caption="Photo 1">
-              <img src="images/build-4/1.jpg" alt="Build 4 — photo 1" loading="lazy" />
-            </button>
-            <button class="gallery__item" type="button" data-full="images/build-4/2.jpg" data-caption="Photo 2">
-              <img src="images/build-4/2.jpg" alt="Build 4 — photo 2" loading="lazy" />
-            </button>
-            <button class="gallery__item" type="button" data-full="images/build-4/3.jpg" data-caption="Photo 3">
-              <img src="images/build-4/3.jpg" alt="Build 4 — photo 3" loading="lazy" />
-            </button>
-            <button class="gallery__item" type="button" data-full="images/build-4/4.jpg" data-caption="Photo 4">
-              <img src="images/build-4/4.jpg" alt="Build 4 — photo 4" loading="lazy" />
-            </button>
-            <button class="gallery__item" type="button" data-full="images/build-4/5.jpg" data-caption="Photo 5">
-              <img src="images/build-4/5.jpg" alt="Build 4 — photo 5" loading="lazy" />
-            </button>
-            <button class="gallery__item" type="button" data-full="images/build-4/6.jpg" data-caption="Photo 6">
-              <img src="images/build-4/6.jpg" alt="Build 4 — photo 6" loading="lazy" />
-            </button>
-            <button class="gallery__item" type="button" data-full="images/build-4/7.jpg" data-caption="Photo 7">
-              <img src="images/build-4/7.jpg" alt="Build 4 — photo 7" loading="lazy" />
-            </button>
-            <button class="gallery__item" type="button" data-full="images/build-4/8.jpg" data-caption="Photo 8">
-              <img src="images/build-4/8.jpg" alt="Build 4 — photo 8" loading="lazy" />
-            </button>
-            <button class="gallery__item" type="button" data-full="images/build-4/9.jpg" data-caption="Photo 9">
-              <img src="images/build-4/9.jpg" alt="Build 4 — photo 9" loading="lazy" />
-            </button>
-            <button class="gallery__item" type="button" data-full="images/build-4/10.jpg" data-caption="Photo 10">
-              <img src="images/build-4/10.jpg" alt="Build 4 — photo 10" loading="lazy" />
-            </button>
-            <button class="gallery__item" type="button" data-full="images/build-4/11.jpg" data-caption="Photo 11">
-              <img src="images/build-4/11.jpg" alt="Build 4 — photo 11" loading="lazy" />
-            </button>
-            <button class="gallery__item" type="button" data-full="images/build-4/12.jpg" data-caption="Photo 12">
-              <img src="images/build-4/12.jpg" alt="Build 4 — photo 12" loading="lazy" />
-            </button>
-          </div>
-          <div class="specs reveal">
-            <h4>Build 4 specs</h4>
-            <dl class="specs__list">
-              <div class="specs__row"><dt>Case</dt><dd>Corsair 4000D Frame Wood</dd></div>
-              <div class="specs__row"><dt>CPU</dt><dd>AMD Ryzen 7 5800XT</dd></div>
-              <div class="specs__row"><dt>GPU</dt><dd>NVIDIA RTX 3080 FE (used)</dd></div>
-              <div class="specs__row"><dt>Motherboard</dt><dd>MSI B550M PRO-VDH Wi-Fi</dd></div>
-              <div class="specs__row"><dt>RAM</dt><dd>32GB DDR4 3200MHz</dd></div>
-              <div class="specs__row"><dt>Storage</dt><dd>2TB M.2 SSD (used) + 1TB SATA SSD</dd></div>
-              <div class="specs__row"><dt>PSU</dt><dd>ASRock PRO-850G</dd></div>
-              <div class="specs__row"><dt>Cooling</dt><dd>Thermalright Frozen Infinity 360 Black</dd></div>
-              <div class="specs__row"><dt>OS</dt><dd>Windows 11</dd></div>
-            </dl>
-          </div>
         </div>
         <p class="portfolio__note">
           Ready to see your own dream build here? Photos of your rig can be added after delivery.
@@ -283,24 +319,20 @@
         <div class="testimonials__grid">
           <blockquote class="card quote reveal">
             <p class="quote__text">
-              "The cable management alone was worth it. It runs silent, runs cool, and looks
-              incredible on my desk."
+              "Did quality work, PC still works after a year and a half, and whenever I had a
+              problem I called and he helped fix it."
             </p>
-            <cite>— Sam R., Build 4</cite>
+            <cite>— Noah H., Build 2</cite>
           </blockquote>
           <blockquote class="card quote reveal">
             <p class="quote__text">
-              "Explained every part choice clearly and stayed in budget. My edit times dropped
-              dramatically."
+              "Very efficient and dedicated to his work. He brought to life my vision of a PC and
+              I couldn't be happier. He scavenged for the best deals and even found me a monitor
+              within my budget. He was very easy to communicate with and asked good questions to
+              make sure I got exactly what I wanted. I fully recommend and wouldn't personally do
+              any business with any other builder."
             </p>
-            <cite>— Dana K., Build 2</cite>
-          </blockquote>
-          <blockquote class="card quote reveal">
-            <p class="quote__text">
-              "Took my old prebuilt that was crashing constantly and made it feel brand new.
-              Insanely fast turnaround."
-            </p>
-            <cite>— Marcus T., Build 3</cite>
+            <cite>— Lukas J., Build 3</cite>
           </blockquote>
         </div>
       </div>
